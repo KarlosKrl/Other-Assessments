@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jourline</title>
+    <link rel="icon" href="./MiniLogoJourlinev2.svg" />
+    <style>
+      header {
+        border: 2px solid black;
+        border-radius: 2px;
+        padding: 5px;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./JourlineLogo.svg" alt="site logo" height="20px" />
+      <nav>
+        <a href="#" title="Profil page">Profile</a>
+        <a href="#" title="Journal page">Journal</a>
+        <a href="#" title="log out">log out</a>
+      </nav>
+    </header>
+    <main>
+      <form action="" id="journalform">
+        <fieldset>
+          <input type="radio" id="monday" name="days" value="Monday" />
+          <label for="monday">M</label>
+          <input type="radio" id="tuesday" name="days" value="Tuesday" />
+          <label for="tuesday">T</label>
+          <input type="radio" id="wendsday" name="days" value="Wendsday" />
+          <label for="wendsday">W</label>
+          <input type="radio" id="thurstday" name="days" value="Thursday" />
+          <label for="thursday">T</label>
+          <input type="radio" id="friday" name="days" days="Friday" />
+          <label for="friday">F</label>
+          <input type="radio" id="saturday" name="days" value="Saturday" />
+          <label for="saturday">S</label>
+          <input type="radio" id="Sunday" name="days" value="Sunday" />
+          <label for="Sunday">S</label><br />
+          <label for="date">Date: </label>
+          <input type="datetime-local" id="date" name="date" />
+        </fieldset>
+        <fieldset>
+          <legend>Morning</legend>
+          <div>I am grateful for today</div>
+          <textarea
+            name="I_am_grateful_for_today"
+            id="text1"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div>My today's plan</div>
+          <textarea
+            name="My_today's_plan"
+            id="text2"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>I like about myself</legend>
+          <label for="first_thing">1.</label>
+          <input type="text" id="first_thing" name="things" />
+          <label for="second_thing">2.</label>
+          <input type="text" id="second_thing" name="things" />
+          <label for="third_thing">3.</label>
+          <input type="text" id="third_thing" name="things" />
+          <label for="fourth_thing">4.</label>
+          <input type="text" id="fourth_thing" name="things" />
+          <label for="fifth_thing">5.</label>
+          <input type="text" id="fifth_thing" name="things" />
+        </fieldset>
+        <fieldset>
+          <legend>Before bed</legend>
+          <div>5 things that went well</div>
+          <label for="thing1">1.</label>
+          <input type="text" id="thing1" name="things2" /><br />
+          <label for="thing2">2.</label>
+          <input type="text" id="thing2" name="things2" /><br />
+          <label for="thing3">3.</label>
+          <input type="text" id="thing3" name="things2" /><br />
+          <label for="thing4">4.</label>
+          <input type="text" id="thing4" name="things2" /><br />
+          <label for="thing5">5.</label>
+          <input type="text" id="thing5" name="things2" /><br />
+          <label for="learned">What have I learned today</label><br />
+          <textarea
+            name="What_I_have_learned_today"
+            id="learned"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+        <button type="submit" form="journalform">Save</button>
+        <input type="reset" />
+      </form>
+    </main>
+  </body>
+</html>
